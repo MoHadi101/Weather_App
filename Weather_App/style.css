@@ -1,0 +1,118 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body {
+    background: #444444;
+   
+}
+.card{
+    background:linear-gradient(135deg, rgba(9, 71, 129, 0.8) 0%, rgba(44, 44, 44, 0.6) 100%);
+    padding: 40px 35px;
+    border-radius: 20px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 90%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    color: #fff;
+}
+.search{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.search input{
+    
+    padding: 10px 25px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    outline: 0;
+    background: #ebfffc;
+    color: #555;
+    height: 60px;
+    flex: 1;
+    margin-right: 18px;
+}
+.search button{
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    border-radius: 50px;
+    height: 60px;
+    width: 60px;
+    background: #ebfffc;
+    transition: background 0.3s ease;
+    /* padding: 6px 2px; */
+}
+.search button:hover{
+    background: #d5d4da;
+}
+.search button img{
+    width: 16px;
+    /* height: 24px; */
+}
+.weather-icon{
+    width: 170px;
+    /* margin: 30px auto 10px; */
+    margin-top: 30px;
+}
+.weather h1{
+    font-size: 80px;
+    font-weight: 500;
+}
+.weather h2{
+    font-size: 45px;
+    font-weight: 400;
+    margin-top: -10px;
+}
+.details{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    margin-top: 50px;
+   
+}
+.col {
+    display: flex;
+    /* flex-direction: column; */
+    align-items: center;
+    text-align: left;
+}
+.col img{
+    width: 40px;
+    margin-right: 10px;
+}
+.humidity, .wind{
+    font-size: 28px;
+    margin-top: -6px;
+}
+/* // Responsive Design */
+
+@media (max-width: 500px) {
+  .details {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .col {
+    margin-bottom: 0;
+  }
+}
+/* Hide the results container */
+.weather {
+    display: none;
+}
+.error {
+    margin-left: 10px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 14px;
+    display: none;
+}
